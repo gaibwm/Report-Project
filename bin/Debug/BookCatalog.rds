@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="BookCatalog">
+  <ConnectionProperties>
+    <Extension>XML</Extension>
+    <ConnectString />
+  </ConnectionProperties>
+  <DataSourceID>ca8a9fdb-96fa-462d-8f0c-3aa332211247</DataSourceID>
+</RptDataSource>

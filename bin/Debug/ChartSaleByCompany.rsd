@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>AdventureWorksLT2012</DataSourceReference>
+      <CommandText>SELECT  S.CustomerID
+	  ,C.CompanyName
+      ,round(sum([SubTotal]), 2) AS SubTotal
+  FROM [AdventureWorksLT2012].[SalesLT].[SalesOrderHeader] S inner join SalesLT.Customer C on (S.CustomerID = C.CustomerID)
+  group by S.CustomerID, C.CompanyName
+  ;</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="CustomerID">
+        <DataField>CustomerID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="CompanyName">
+        <DataField>CompanyName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SubTotal">
+        <DataField>SubTotal</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
