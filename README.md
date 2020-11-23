@@ -1,6 +1,8 @@
 # Report-Project
  AdventureWork2017 SSRS
 
+Sample PDF report file(ales_Order_Detail_Report.pdf) which generates from this project . . .
+
 Download AdventureWork2017(AdventureWork2017.bak) at https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks
 
 Below two store-procedures are the only needed to create the report. 
